@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Fronend Developement</title>
+    <meta name="author" content="Augustine Ugochukwu">
+    <meta name="description"
+        content="This is a landing page for WDD 231 - Web Frontend Developement 1 course, created by Augustine Ugochukwu Odoemene">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/byu.jpg" alt="site logo" class="logo">
+            <span class="author">Augustine U.</span>
+        </div>
+        <button id="navToggle" class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <nav id="primaryNav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#" class="active" aria-current="page">Home</a></li>
+                <li><a href="#">Chamber <small class="soon">(coming soon)</small></a></li>
+                <li><a href="#">Final <small class="soon">(coming soon)</small></a></li>
+                <li><a href="#certificate">Certificate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Home</h1>
+                <p class="lead">Frontend Web Development I — accessible, responsive, and professional portfolio sample.
+                </p>
+            </div>
+            <img src="images/desptop-view.JPG" alt="desktop view" class="hero-image">
+        </section>
+
+        <section id="about" class="card-grid">
+            <h2>About</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="images/welcome.jpeg" alt="welcome" loading="lazy">
+                    <h3>Welcome</h3>
+                    <p>My name is Augustine. I build usable, accessible web interfaces with a focus on clarity and
+                        performance.</p>
+                </article>
+                <article class="card">
+                    <img src="images/moving.jpg" alt="moving" loading="lazy">
+                    <h3>Approach</h3>
+                    <p>I follow best practices: semantic markup, responsive design, and progressive enhancement.</p>
+                </article>
+                <article class="card">
+                    <img src="images/water.jpg" alt="water" loading="lazy">
+                    <h3>Philosophy</h3>
+                    <p>Design for people first — ensure readability, visual hierarchy, and strong contrast.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="card-grid">
+            <h2>Skills</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="images/to-svg.jpeg" alt="svg icon" loading="lazy">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript — accessible and responsive practices.</p>
+                </article>
+                <article class="card">
+                    <img src="images/resize-profile.jpg" alt="profile" loading="lazy">
+                    <h3>Design</h3>
+                    <p>Visual hierarchy, color contrast, and typography choices.</p>
+                </article>
+                <article class="card">
+                    <img src="images/final_img1.webp" alt="final" loading="lazy">
+                    <h3>Performance</h3>
+                    <p>Progressive enhancement and performance-minded assets.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="certificate" class="certificate">
+            <h2>Certificate Courses</h2>
+            <div class="controls">
+                <div class="filter-buttons">
+                    <button data-filter="all" class="filter active">All Courses</button>
+                    <button data-filter="WDD" class="filter">WDD Courses</button>
+                    <button data-filter="CSE" class="filter">CSE Courses</button>
+                </div>
+                <div class="credits">Total credits: <span id="totalCredits">0</span></div>
+            </div>
+            <div id="courses" class="courses-grid" aria-live="polite">
+                <!-- Courses rendered by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="social">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://github.com/prominentmajesty" aria-label="GitHub">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/augustine-ugochukwu-2b4371218/"
+                            aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="credits-note">
+                <h4>Credits</h4>
+                <p>Images courtesy of sample repository. Fonts served via Google Fonts.</p>
+            </div>
+            <div class="legal">
+                <h4>Legal</h4>
+                <p>&copy; <span id="year"></span> Augustine U. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
